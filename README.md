@@ -12,33 +12,33 @@ In this assignment we'll be writing a collection of Ruby classes for a "car lot"
 
 ## Specifications
 
-Think carefully about the order you'll want to build these in. For instance, it might make sense to leave `CarLot` for last, since it needs cars to function.
+Think carefully about the order you'll want to build these in. For instance, it might make sense to leave `CarLot` for last, since it needs cars to function. Also think carefully about which of these bullet points are fundamental properties that need to be stored on the object as instance variables, and which ones will be methods that calculate a result using the values of the instance variables.
 
 ### `CarLot`
 * has a name
-* may have one or more cars
-* can retrieve the "lot value" (total price of all cars on the lot)
-* can retrieve a list of all cars matching a certain make, model, or year
+* may have one or more cars, represented by `Car` objects
+* has a "lot value" (total price of all cars on the lot)
+* has a way to search for cars by make, model, or year
 
 ### `Car`
 * has a make, model, and year of manufacture
 * has an MSRP (original retail price)
 * has a value (MSRP modified by depreciation, taking the year of manufacture into account)
 * all cars have a constant depreciation of 5% per year
-* has a manager markup
-* has a price (value modified by the manager markup)
+* has a markup (can be set to any value, representing the car lot's profit margin)
+* has a price (value modified by the markup)
 
 ### `UsedCar`
-* has the same attributes as a new car
+* inherits from `Car`
 * has a mileage
-* may have one or more damages (scuffed paint, missing hubcaps, etc.)
-* has a query method indicating whether the car has any damages
+* may have one or more damages, represented by `Damage` objects
+* has a way to query whether the car is damaged (has at least one damage)
 * has a value (same calculation as a new car, modified by mileage depreciation and the cost of all current damages)
 * all used cars have a constant mileage depreciation of 1% per 10,000 miles (0.0001% per mile)
 
 ### `Damage`
 * has a description
-* has a cost (how much it would cost to repair)
+* has a cost to repair
 
 ## Extra Challenges
 
