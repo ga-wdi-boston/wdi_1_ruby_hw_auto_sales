@@ -12,7 +12,7 @@ In this assignment we'll be writing a collection of Ruby classes for a "car lot"
 
 ## Specifications
 
-Think carefully about the order you'll want to build these in. For instance, it might make sense to leave `CarLot` for last, since it needs cars to function. Also think carefully about which of these bullet points are fundamental properties that need to be stored on the object as instance variables, and which ones will be methods that calculate a result using the values of the instance variables.
+Think carefully about the order you'll want to build these in. For instance, it might make sense to leave `CarLot` for last, since it needs cars to function. Also think about which of these bullet points are fundamental properties that need to be stored on the object as instance variables, and which ones will be methods that calculate a result using the values of the instance variables.
 
 ### `CarLot`
 * has a name
