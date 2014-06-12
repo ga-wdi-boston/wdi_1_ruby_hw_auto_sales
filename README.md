@@ -33,7 +33,7 @@ Think carefully about the order you'll want to build these in. For instance, it 
 * has a mileage
 * may have one or more damages, represented by `Damage` objects
 * has a way to query whether the car is damaged (has at least one damage)
-* has a value (same calculation as a new car, modified by mileage depreciation and the cost of all current damages)
+* has a value (same calculation as a new car, modified by mileage depreciation and subtracting the cost to repair all current damages)
 * all used cars have a constant mileage depreciation of 1% per 10,000 miles (0.0001% per mile)
 
 ### `Damage`
